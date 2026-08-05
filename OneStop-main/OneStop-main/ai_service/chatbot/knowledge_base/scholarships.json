@@ -1,0 +1,136 @@
+[
+  {
+    "id": "scholarship_001",
+    "name": "National Scholarship Portal (NSP) — Central Sector Scheme",
+    "type": "Merit-cum-Means",
+    "provider": "Ministry of Education, Government of India",
+    "target_students": ["12th pass / UG students", "Family income below ₹4.5 Lakh per year"],
+    "eligibility": {
+      "academic": "Minimum 80% in 12th standard or equivalent",
+      "income_limit": "Family annual income ≤ ₹4,50,000",
+      "category": "All categories (separate slots for SC/ST/OBC/Minority)",
+      "course_type": "Regular full-time UG courses in recognised institutions",
+      "age_limit": "No upper age limit specified"
+    },
+    "benefits": {"amount": "₹10,000–₹12,000 per year", "duration": "Up to 3–5 years (course duration)", "type": "Direct Bank Transfer (DBT)"},
+    "application_process": "Apply online at scholarships.gov.in after 12th results. Documents: Aadhaar, income certificate, 12th marksheet, bank account, caste certificate (if applicable).",
+    "important_dates": {"application_open": "Usually August–September", "last_date": "Usually October–November"},
+    "website": "https://scholarships.gov.in",
+    "renewal": "Renewed annually based on academic performance (60% marks required)"
+  },
+  {
+    "id": "scholarship_002",
+    "name": "Post Matric Scholarship for SC Students",
+    "type": "Category-based",
+    "provider": "Ministry of Social Justice and Empowerment, Government of India",
+    "target_students": ["SC (Scheduled Caste) students", "Post-matriculation (Class 11 and above) enrolled in government-recognised institutions"],
+    "eligibility": {
+      "academic": "Passed Class 10 (matriculation)",
+      "income_limit": "Family annual income ≤ ₹2,50,000",
+      "category": "SC students only",
+      "course_type": "Class 11, 12, UG, PG, Diploma, PhD, Professional courses"
+    },
+    "benefits": {"amount": "₹5,000–₹20,000+ per year depending on course level", "additional": "Maintenance allowance, thesis allowance, book allowance", "type": "DBT"},
+    "application_process": "Apply through scholarships.gov.in or respective State portal. Documents: Caste certificate, income certificate, institution bonafide certificate, marksheets, Aadhaar.",
+    "important_dates": {"application_open": "July–September (varies by state)", "last_date": "October–November"},
+    "website": "https://scholarships.gov.in",
+    "renewal": "Annually, maintain satisfactory academic progress"
+  },
+  {
+    "id": "scholarship_003",
+    "name": "Merit-cum-Means Scholarship for Professional and Technical Courses (Minority)",
+    "type": "Merit-cum-Means (Minority)",
+    "provider": "Ministry of Minority Affairs, Government of India",
+    "target_students": ["Students from minority communities (Muslim, Christian, Sikh, Buddhist, Jain, Parsi)", "UG/PG in professional/technical courses"],
+    "eligibility": {
+      "academic": "Minimum 50% marks in previous qualifying exam",
+      "income_limit": "Family annual income ≤ ₹2,50,000",
+      "category": "6 notified minority communities",
+      "course_type": "Technical and professional courses at graduate/postgraduate level (B.Tech, MBBS, MBA, Law)"
+    },
+    "benefits": {"amount": "₹20,000/year (course fees up to ₹20,000) + ₹10,000 maintenance", "type": "DBT"},
+    "application_process": "Apply at scholarships.gov.in. Documents: Minority community certificate, income proof, marksheet, institution fee receipt, Aadhaar.",
+    "important_dates": {"last_date": "Typically October 31"},
+    "website": "https://scholarships.gov.in",
+    "renewal": "Annual, maintain 50% marks"
+  },
+  {
+    "id": "scholarship_004",
+    "name": "AICTE Pragati Scholarship for Girls",
+    "type": "Gender-based",
+    "provider": "AICTE (All India Council for Technical Education)",
+    "target_students": ["Girl students enrolled in AICTE-approved Diploma / Degree programs"],
+    "eligibility": {
+      "academic": "Enrolled in 1st year of AICTE-approved Technical program",
+      "income_limit": "Family annual income ≤ ₹8,00,000",
+      "category": "Girls only (one girl per family eligible)",
+      "course_type": "B.Tech / BE / Diploma in Engineering or Technology"
+    },
+    "benefits": {"amount": "₹50,000 per year (up to 4 years)", "additional": "One-time contingency grant of ₹2,000", "type": "DBT"},
+    "application_process": "Apply on AICTE portal (aicte-india.org). Documents: Aadhaar, income certificate, AICTE-approved college enrollment proof.",
+    "important_dates": {"application_open": "August–September", "last_date": "November"},
+    "website": "https://www.aicte-india.org/bureaus/student",
+    "renewal": "Annual, maintain 60% attendance and pass the year"
+  },
+  {
+    "id": "scholarship_005",
+    "name": "AICTE Saksham Scholarship for Differently Abled",
+    "type": "Disability-based",
+    "provider": "AICTE",
+    "target_students": ["Students with benchmark disability (≥40%) enrolled in AICTE-approved Diploma/Degree programs"],
+    "eligibility": {
+      "academic": "Enrolled in 1st year",
+      "income_limit": "Family annual income ≤ ₹8,00,000",
+      "category": "Differently-abled students",
+      "disability_requirement": "40%+ benchmark disability as per Rights of Persons with Disabilities Act 2016"
+    },
+    "benefits": {"amount": "₹50,000 per year", "type": "DBT"},
+    "application_process": "Apply on AICTE portal with disability certificate from government hospital.",
+    "website": "https://www.aicte-india.org/bureaus/student"
+  },
+  {
+    "id": "scholarship_006",
+    "name": "State Government Engineering Merit Scholarship (General Example — Maharashtra)",
+    "type": "State Merit-based",
+    "provider": "State Government (example: Maharashtra Government)",
+    "target_students": ["Engineering students in state government/aided colleges", "General + OBC students scoring high in HSC/JEE"],
+    "eligibility": {
+      "academic": "Top 10% in HSC Science board OR specific JEE Main rank criteria",
+      "income_limit": "Varies by state — typically ₹6–8 Lakh",
+      "category": "Varies (General/OBC/EWS have separate quotas)"
+    },
+    "benefits": {"amount": "₹5,000–₹25,000 per year (varies by state)", "type": "State Treasury payment"},
+    "application_process": "Apply through respective State scholarship portal (e.g., Mahadbt.maharashtra.gov.in for Maharashtra). Each state has its own portal.",
+    "note": "Every state has its own scholarship schemes. Always check your state government's official scholarship portal.",
+    "website": "Check your respective state's scholarship portal"
+  },
+  {
+    "id": "scholarship_007",
+    "name": "Inspire Scholarship (DST — Innovation in Science Pursuit for Inspired Research)",
+    "type": "Merit-based (Science students)",
+    "provider": "Department of Science and Technology (DST), Government of India",
+    "target_students": ["Class 12 Science stream students in top 1% of board", "Enrolled in B.Sc / B.S / Int. M.Sc in Natural & Basic Sciences"],
+    "eligibility": {
+      "academic": "Top 1% in Class 12 board (or JEE/NEET top 10,000 rank)",
+      "category": "Science stream only",
+      "course_type": "BSc / BS / Int. MSc in Physics, Chemistry, Biology, Mathematics, Computer Science (pure sciences)"
+    },
+    "benefits": {"amount": "₹80,000 per year (₹60,000 scholarship + ₹20,000 summer internship)", "duration": "5 years", "type": "DBT"},
+    "application_process": "Apply at online-inspire.gov.in. Board toppers are notified by schools. Others apply with board rank certificate.",
+    "website": "https://online-inspire.gov.in"
+  },
+  {
+    "id": "scholarship_008",
+    "name": "Kishore Vaigyanik Protsahan Yojana (KVPY)",
+    "type": "Research Fellowship",
+    "provider": "Indian Institute of Science (IISc), Bangalore — funded by DST",
+    "target_students": ["Class 11, 12 students and 1st year UG (BSc/Int. MSc) in Natural Sciences and related disciplines"],
+    "eligibility": {
+      "academic": "75% in class 10 (60% for SC/ST/PWD). Aptitude test (SA/SX/SB streams).",
+      "category": "Science stream"
+    },
+    "benefits": {"amount": "₹5,000–₹7,000/month fellowship through BSc/MSc, ₹7,000–₹9,000/month through PhD", "type": "Monthly fellowship + annual contingency"},
+    "note": "KVPY is one of India's most prestigious science fellowships. Provides full fellowship for BSc+MSc if you pursue research track.",
+    "website": "http://www.kvpy.iisc.ernet.in"
+  }
+]

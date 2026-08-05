@@ -1,0 +1,43 @@
+[
+  {
+    "id": "salary_001",
+    "sector": "Information Technology",
+    "roles": [
+      {"role": "Software Engineer (Service Company — TCS/Infosys/Wipro)", "fresher": "3.5–6 LPA", "mid_3yr": "8–14 LPA", "senior_7yr": "18–35 LPA"},
+      {"role": "Software Engineer (Product Company — Amazon/Google/Microsoft)", "fresher": "18–40 LPA", "mid_3yr": "35–70 LPA", "senior_7yr": "70–150 LPA"},
+      {"role": "Data Scientist", "fresher": "6–14 LPA", "mid_3yr": "16–32 LPA", "senior_7yr": "35–80 LPA"},
+      {"role": "ML Engineer", "fresher": "10–20 LPA", "mid_3yr": "22–45 LPA", "senior_7yr": "50–100 LPA"},
+      {"role": "DevOps/Cloud Engineer", "fresher": "6–12 LPA", "mid_3yr": "14–28 LPA", "senior_7yr": "30–65 LPA"},
+      {"role": "Cybersecurity Analyst", "fresher": "4–10 LPA", "mid_3yr": "12–25 LPA", "senior_7yr": "28–60 LPA"},
+      {"role": "Full Stack Developer (Startup/Mid-size)", "fresher": "5–10 LPA", "mid_3yr": "12–22 LPA", "senior_7yr": "25–50 LPA"}
+    ],
+    "notes": "Salaries are CTC (Cost-to-Company) in Indian Rupees (INR). LPA = Lakhs Per Annum. Take-home is approximately 70–80% of CTC after deductions.",
+    "high_paying_companies": ["Google India", "Microsoft India", "Amazon India", "Goldman Sachs", "DE Shaw", "Tower Research", "Optiver", "Samsung R&D", "Adobe India"]
+  },
+  {
+    "id": "salary_002",
+    "sector": "Government / Public Sector",
+    "roles": [
+      {"role": "IAS Officer (after probation)", "grade_pay": "₹56,100/month (Entry)", "senior": "₹2,25,000/month (Cabinet Secretary)", "perks": "Accommodation, transport, pensions"},
+      {"role": "PSU Engineer (BHEL/ONGC/NTPC — via GATE)", "fresher": "7–12 LPA CTC", "mid": "15–25 LPA", "perks": "HRA, DA, Pension (EPF), Job Security"},
+      {"role": "DRDO Scientist B (via GATE)", "grade_pay": "₹47,600/month (level 8)", "CTC_estimate": "12–16 LPA including allowances"},
+      {"role": "ISRO Scientist/Engineer SC (via ISRO centralised recruitment)", "grade_pay": "₹56,100/month", "CTC_estimate": "12–18 LPA including allowances"},
+      {"role": "Bank PO (via IBPS PO)", "in_hand": "₹52,000–₹65,000/month", "CTC_estimate": "8–12 LPA"},
+      {"role": "Government Doctor (after MBBS internship)", "salary": "₹50,000–₹1,00,000/month (varies by state)"}
+    ],
+    "notes": "Government jobs provide pension, housing, transport, medical benefits — total effective compensation is higher than CTC suggests."
+  },
+  {
+    "id": "salary_003",
+    "sector": "Engineering (Core — Non-IT)",
+    "roles": [
+      {"role": "Civil Engineer (Government)", "fresher": "4–6 LPA", "mid": "8–15 LPA", "senior": "18–35 LPA"},
+      {"role": "Civil Engineer (L&T/Private)", "fresher": "3.5–5.5 LPA", "mid": "8–18 LPA"},
+      {"role": "Mechanical Engineer (Manufacturing)", "fresher": "3–6 LPA", "mid": "8–16 LPA"},
+      {"role": "Electrical Engineer (Power Sector)", "fresher": "4–8 LPA", "mid": "10–22 LPA"},
+      {"role": "Electronics/VLSI Engineer", "fresher": "5–12 LPA", "mid": "14–30 LPA"},
+      {"role": "Aerospace Engineer (ISRO/HAL)", "fresher": "10–16 LPA (Govt CTC)", "mid": "16–30 LPA"}
+    ],
+    "notes": "Core engineering salaries are lower than IT but offer strong job security and PSU benefits. GATE score significantly boosts PSU salaries."
+  }
+]

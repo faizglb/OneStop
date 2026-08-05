@@ -1,0 +1,167 @@
+spring:
+  application:
+    name: acea-backend
+
+  # ── Multipart Upload ───────────────────────────────────────────
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 12MB
+
+  # ── Database ──────────────────────────────────────────────────
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/acea_db}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:Kundan94@}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 20
+      minimum-idle: 5
+      pool-name: AceaHikariPool
+
+  # ── JPA ───────────────────────────────────────────────────────
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          time_zone: UTC
+        default_schema: identity_schema
+    open-in-view: false
+
+  # ── Flyway ────────────────────────────────────────────────────
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    baseline-version: 0
+    schemas: identity_schema
+    out-of-order: false
+    validate-on-migrate: true
+
+  # ── Mail ──────────────────────────────────────────────────────
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:noreply@acea.io}
+    password: ${MAIL_PASSWORD:changeme}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+
+  # ── Thymeleaf ─────────────────────────────────────────────────
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
+# ── Server ────────────────────────────────────────────────────
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /api/v1
+  error:
+    include-message: never
+    include-binding-errors: never
+    include-stacktrace: never
+    include-exception: false
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+
+# ── App Custom Properties ──────────────────────────────────────
+app:
+  name: ACEA Platform
+  version: 1.0.0
+  frontend-url: ${FRONTEND_URL:http://localhost:5173}
+  support-email: support@acea.io
+  ai-service-url: ${AI_SERVICE_URL:http://localhost:8000}
+
+  jwt:
+    secret: ${JWT_SECRET:acea-super-secret-jwt-key-must-be-at-least-512-bits-long-for-HS512-algorithm-production-change-this}
+    access-token-expiry-ms: ${JWT_ACCESS_EXPIRY:900000}        # 15 minutes
+    refresh-token-expiry-ms: ${JWT_REFRESH_EXPIRY:604800000}   # 7 days
+    issuer: acea-platform
+    audience: acea-clients
+
+  auth:
+    email-verification-expiry-hours: ${EMAIL_VERIFY_EXPIRY_HRS:24}
+    password-reset-expiry-hours: ${PWD_RESET_EXPIRY_HRS:2}
+    max-failed-attempts: 5
+    lockout-duration-minutes: 30
+    bcrypt-strength: 12
+
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:5173,http://localhost:3000}
+    allowed-methods: GET,POST,PUT,PATCH,DELETE,OPTIONS
+    allowed-headers: "*"
+    allow-credentials: true
+    max-age: 3600
+
+# ── SpringDoc / Swagger ────────────────────────────────────────
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    try-it-out-enabled: true
+    filter: true
+  show-actuator: false
+
+# ── Actuator ──────────────────────────────────────────────────
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: when-authorized
+  info:
+    env:
+      enabled: true
+
+# ── Logging ───────────────────────────────────────────────────
+logging:
+  level:
+    root: INFO
+    com.acea: DEBUG
+    org.springframework.security: INFO
+    org.hibernate.SQL: INFO
+    org.hibernate.orm.jdbc.bind: INFO
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${PID:- } --- [%t] %-40.40logger{39} : %m%n%wEx"
+  file:
+    name: logs/acea-backend.log
+  logback:
+    rollingpolicy:
+      max-file-size: 100MB
+      max-history: 30
+      total-size-cap: 3GB
+
+# ── Cloudinary ────────────────────────────────────────────────
+cloudinary:
+  cloud-name: ${CLOUDINARY_CLOUD_NAME:demo}
+  api-key: ${CLOUDINARY_API_KEY:key}
+  api-secret: ${CLOUDINARY_API_SECRET:secret}
