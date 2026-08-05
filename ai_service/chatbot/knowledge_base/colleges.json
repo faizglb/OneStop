@@ -1,0 +1,216 @@
+[
+  {
+    "id": "college_001",
+    "name": "Indian Institute of Technology Bombay (IIT Bombay)",
+    "type": "Government (IIT)",
+    "location": "Mumbai, Maharashtra",
+    "established": 1958,
+    "nirf_rank": 4,
+    "naac_grade": "A++",
+    "admission_exam": "JEE Advanced",
+    "courses": ["B.Tech", "M.Tech", "M.Sc", "PhD", "MBA"],
+    "popular_branches": ["Computer Science", "Electrical Engineering", "Mechanical Engineering", "Chemical Engineering"],
+    "cutoff_info": {
+      "CSE_general": "Under rank 100 (JEE Advanced)",
+      "Electrical_general": "Under rank 300",
+      "Mechanical_general": "Under rank 600"
+    },
+    "fees": {"btech_total": "~₹9 Lakh (4 years)", "hostel_per_year": "₹40,000–₹60,000"},
+    "placement_stats": {
+      "average_package": "25 LPA",
+      "highest_package": "2.4 CPA (international)",
+      "placement_percentage": "95%",
+      "top_recruiters": ["Google", "Microsoft", "Amazon", "Goldman Sachs", "McKinsey"]
+    },
+    "scholarships_available": ["MCM Scholarship", "Institute Scholarships", "SC/ST Fee Waiver"],
+    "hostel": true,
+    "website": "https://www.iitb.ac.in",
+    "description": "Premier technical institute ranked among top 5 globally for engineering. Known for research, entrepreneurship (IIT Bombay incubates 200+ startups)."
+  },
+  {
+    "id": "college_002",
+    "name": "Indian Institute of Technology Delhi (IIT Delhi)",
+    "type": "Government (IIT)",
+    "location": "New Delhi",
+    "established": 1961,
+    "nirf_rank": 2,
+    "naac_grade": "A++",
+    "admission_exam": "JEE Advanced",
+    "courses": ["B.Tech", "M.Tech", "M.Sc", "PhD", "MBA (DMS)"],
+    "popular_branches": ["Computer Science", "Electrical Engineering", "Chemical Engineering", "Biotechnology"],
+    "cutoff_info": {
+      "CSE_general": "Under rank 80 (JEE Advanced)",
+      "Electrical_general": "Under rank 250"
+    },
+    "fees": {"btech_total": "~₹8.5 Lakh (4 years)"},
+    "placement_stats": {
+      "average_package": "28 LPA",
+      "highest_package": "3.67 CPA (international)",
+      "placement_percentage": "95%+",
+      "top_recruiters": ["Uber", "Microsoft", "Tower Research", "Optiver", "D.E. Shaw"]
+    },
+    "scholarships_available": ["Institute Merit Scholarship", "SC/ST Scholarship", "AICTE scholarships"],
+    "hostel": true,
+    "website": "https://home.iitd.ac.in",
+    "description": "Located in India's capital, IIT Delhi excels in research and industry collaboration. Strong alumni network in Silicon Valley and Wall Street."
+  },
+  {
+    "id": "college_003",
+    "name": "National Institute of Technology Trichy (NIT Trichy)",
+    "type": "Government (NIT)",
+    "location": "Tiruchirappalli, Tamil Nadu",
+    "established": 1964,
+    "nirf_rank": 9,
+    "naac_grade": "A++",
+    "admission_exam": "JEE Main",
+    "courses": ["B.Tech", "M.Tech", "M.Sc", "PhD", "MBA"],
+    "popular_branches": ["Computer Science", "Mechanical Engineering", "Electrical Engineering", "Civil Engineering"],
+    "cutoff_info": {
+      "CSE_general_HS": "JEE Main rank under 500 (Home State)",
+      "CSE_general_OS": "JEE Main rank under 200 (Other State)",
+      "Mechanical_general_OS": "JEE Main rank under 3000"
+    },
+    "fees": {"btech_total": "~₹5.5 Lakh (4 years)"},
+    "placement_stats": {
+      "average_package": "15 LPA",
+      "highest_package": "1.5 CPA (international)",
+      "placement_percentage": "90%",
+      "top_recruiters": ["Samsung", "Amazon", "Qualcomm", "TCS Digital", "Zoho"]
+    },
+    "scholarships_available": ["Merit-cum-Means Scholarship", "SC/ST Fee Waiver", "State Scholarships"],
+    "hostel": true,
+    "website": "https://www.nitt.edu",
+    "description": "Top-ranked NIT with exceptional placement record. Preferred by students who score 1000-5000 rank in JEE Main."
+  },
+  {
+    "id": "college_004",
+    "name": "BITS Pilani (Birla Institute of Technology and Science)",
+    "type": "Deemed University (Private)",
+    "location": "Pilani, Rajasthan (Also: Goa, Hyderabad campuses)",
+    "established": 1964,
+    "nirf_rank": 28,
+    "naac_grade": "A",
+    "admission_exam": "BITSAT",
+    "courses": ["B.E.", "M.Sc (Integrated)", "M.Tech", "MBA", "PhD"],
+    "popular_branches": ["Computer Science", "Electronics", "Mechanical", "Chemical"],
+    "cutoff_info": {
+      "CSE_Pilani": "BITSAT score 340+/400",
+      "CSE_Goa": "BITSAT score 320+",
+      "CSE_Hyderabad": "BITSAT score 310+"
+    },
+    "fees": {"btech_total": "~₹20 Lakh (4 years)"},
+    "placement_stats": {
+      "average_package": "20 LPA",
+      "highest_package": "1.8 CPA (international)",
+      "placement_percentage": "93%",
+      "top_recruiters": ["Microsoft", "Goldman Sachs", "DE Shaw", "Google", "Schlumberger"]
+    },
+    "scholarships_available": ["BITS Merit Scholarship", "BITS Need-based Aid", "External scholarships"],
+    "hostel": true,
+    "website": "https://www.bits-pilani.ac.in",
+    "description": "Premier private engineering institution. BITSAT is conducted separately from JEE. Known for dual-degree programs and strong placement."
+  },
+  {
+    "id": "college_005",
+    "name": "Vellore Institute of Technology (VIT Vellore)",
+    "type": "Deemed University (Private)",
+    "location": "Vellore, Tamil Nadu",
+    "established": 1984,
+    "nirf_rank": 11,
+    "naac_grade": "A++",
+    "admission_exam": "VITEEE",
+    "courses": ["B.Tech", "M.Tech", "MBA", "PhD"],
+    "popular_branches": ["Computer Science", "CSE (AI/ML)", "Information Technology", "Electronics"],
+    "cutoff_info": {
+      "CSE_general": "Top 10,000 rank in VITEEE",
+      "CSE_AI_ML": "Top 5,000 rank in VITEEE"
+    },
+    "fees": {"btech_total": "~₹7.5 Lakh (4 years)"},
+    "placement_stats": {
+      "average_package": "10 LPA",
+      "highest_package": "60 LPA",
+      "placement_percentage": "85%",
+      "top_recruiters": ["TCS", "Infosys", "Wipro", "Cognizant", "Amazon", "Zoho"]
+    },
+    "scholarships_available": ["VIT Excellence Scholarship (for board toppers)", "SC/ST Benefits", "NSP"],
+    "hostel": true,
+    "website": "https://vit.ac.in",
+    "description": "Largest private university in India for engineering. VIT accepts 12th board marks + VITEEE. International collaborations in 50+ countries."
+  },
+  {
+    "id": "college_006",
+    "name": "Indian Institute of Management Ahmedabad (IIM-A)",
+    "type": "Government (IIM)",
+    "location": "Ahmedabad, Gujarat",
+    "established": 1961,
+    "nirf_rank": 1,
+    "naac_grade": "A++",
+    "admission_exam": "CAT",
+    "courses": ["MBA (PGP)", "MBA-FABM", "PhD", "Executive MBA"],
+    "popular_branches": ["General Management", "Finance", "Marketing", "Strategy", "Operations"],
+    "cutoff_info": {
+      "PGP_general": "CAT percentile 99.5+ (typical shortlist)",
+      "Work_experience": "Preferred but not mandatory"
+    },
+    "fees": {"mba_total": "~₹35 Lakh (2 years)"},
+    "placement_stats": {
+      "average_package": "34 LPA",
+      "highest_package": "1.2 CPA (international)",
+      "placement_percentage": "100%",
+      "top_recruiters": ["McKinsey", "BCG", "Bain", "Goldman Sachs", "Amazon", "Flipkart"]
+    },
+    "scholarships_available": ["IIM-A Need-Based Financial Aid", "SC/ST Scholarship", "External fellowships"],
+    "hostel": true,
+    "website": "https://www.iima.ac.in",
+    "description": "India's #1 management school. Flagship PGP program (MBA equivalent) accepts students with CAT 99.5+ percentile. Alumni are top CEOs globally."
+  },
+  {
+    "id": "college_007",
+    "name": "Government Medical College & Hospital Chandigarh (GMCH-32)",
+    "type": "Government (State Medical College)",
+    "location": "Chandigarh",
+    "established": 1991,
+    "nirf_rank": 25,
+    "naac_grade": "B++",
+    "admission_exam": "NEET-UG",
+    "courses": ["MBBS", "MD", "MS"],
+    "popular_branches": ["General Medicine", "Surgery", "Paediatrics", "Obstetrics"],
+    "cutoff_info": {
+      "MBBS_general_UR": "NEET rank under 15,000 (state quota) / 8,000 (All India Quota)"
+    },
+    "fees": {"mbbs_total": "~₹1.5 Lakh (5.5 years, government college)", "hostel_yearly": "₹30,000"},
+    "placement_stats": {
+      "average_package": "PG Entrance → Government/Private hospitals",
+      "placement_percentage": "100% (all MBBS doctors get employment or pursue PG)"
+    },
+    "scholarships_available": ["SC/ST/OBC Fee Concession", "NSP", "State Government Merit Scholarship"],
+    "hostel": true,
+    "website": "https://gmch.gov.in",
+    "description": "Government medical college with subsidised fees. NEET-UG is the only admission route for MBBS across all government and private medical colleges in India."
+  },
+  {
+    "id": "college_008",
+    "name": "Delhi University (DU) — Top Colleges (Sri Ram, LSR, Hindu, Miranda)",
+    "type": "Central University (Government)",
+    "location": "New Delhi",
+    "established": 1922,
+    "nirf_rank": 12,
+    "naac_grade": "A++",
+    "admission_exam": "CUET-UG",
+    "courses": ["B.A.", "B.Sc", "B.Com", "BCA", "BMS", "B.Tech (DTU/NSUT — separate)"],
+    "popular_branches": ["Economics (Honours)", "Political Science", "English Honours", "B.Com (Hons)", "Mathematics"],
+    "cutoff_info": {
+      "Economics_Hons_SRCC": "CUET: Near perfect score",
+      "BCom_Hons_SRCC": "CUET 95%+ expected"
+    },
+    "fees": {"ug_total": "~₹15,000–₹50,000/year (DU colleges)"},
+    "placement_stats": {
+      "average_package": "8 LPA (undergraduate, varies by college and stream)",
+      "top_recruiters": ["KPMG", "Deloitte", "McKinsey (interns)", "Media houses", "Civil Services"]
+    },
+    "scholarships_available": ["DU Merit-cum-Means Scholarship", "SC/ST Reservation + Fee Concession", "NSP"],
+    "hostel": true,
+    "website": "https://du.ac.in",
+    "description": "Largest university in India. CUET-UG is mandatory since 2022 for admission. DU colleges offer exceptional liberal arts and commerce education."
+  }
+]
