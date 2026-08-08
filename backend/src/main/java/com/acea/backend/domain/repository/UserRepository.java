@@ -46,4 +46,12 @@ public interface UserRepository extends JpaRepository<User, UUID> {
     @Modifying
     @Query("UPDATE User u SET u.password = :hash WHERE u.id = :id")
     void updatePassword(@Param("id") UUID id, @Param("hash") String hash);
+
+    org.springframework.data.domain.Page<User> findByEmailContainingIgnoreCaseOrFirstNameContainingIgnoreCaseOrLastNameContainingIgnoreCase(
+        String email, String firstName, String lastName, org.springframework.data.domain.Pageable pageable
+    );
+
+    org.springframework.data.domain.Page<User> findByRole(com.acea.backend.domain.enums.Role role, org.springframework.data.domain.Pageable pageable);
+
+    long countByActiveTrueAndSuspendedFalse();
 }

@@ -171,6 +171,28 @@ def delete_chat_session(session_id: str):
         logger.error("Failed to delete session", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
+# ── Sprint 12: Admin AI Endpoints ─────────────────────────────────────
+
+@app.get("/api/admin/ai-config")
+def get_ai_service_config():
+    return {
+        "llm_provider": Config.LLM_PROVIDER,
+        "model_name": Config.LLM_MODEL,
+        "temperature": Config.TEMPERATURE,
+        "max_tokens": Config.MAX_TOKENS,
+        "embedding_model": Config.EMBEDDING_MODEL,
+        "similarity_threshold": Config.SIMILARITY_THRESHOLD
+    }
+
+@app.post("/api/admin/knowledge-base/reindex")
+def reindex_knowledge_base():
+    try:
+        stats = run_ingestion(force_reingest=True)
+        return {"status": "SUCCESS", "message": "Knowledge Base re-indexed successfully", "stats": stats}
+    except Exception as e:
+        logger.error("Failed to reindex knowledge base", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Reindexing failed: {str(e)}")
+
 if __name__ == "__main__":
     uvicorn.run("main:app", host=Config.HOST, port=Config.PORT, reload=True)
 

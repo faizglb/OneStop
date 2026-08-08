@@ -15,6 +15,7 @@ public enum Role {
     PREMIUM_STUDENT("ROLE_PREMIUM_STUDENT", "Premium student — unlimited AI queries, advanced features"),
     MENTOR("ROLE_MENTOR", "Industry professional providing mentorship sessions"),
     HR_MANAGER("ROLE_HR_MANAGER", "Enterprise HR — manages team learning plans"),
+    CONTENT_MANAGER("ROLE_CONTENT_MANAGER", "Content manager — content management only"),
     ADMIN("ROLE_ADMIN", "Platform administrator — content and user management"),
     SUPER_ADMIN("ROLE_SUPER_ADMIN", "Superadmin — full platform access including system config");
 
@@ -38,7 +39,7 @@ public enum Role {
      * Returns true if this role has at least admin-level access.
      */
     public boolean isAdminLevel() {
-        return this == ADMIN || this == SUPER_ADMIN;
+        return this == CONTENT_MANAGER || this == ADMIN || this == SUPER_ADMIN;
     }
 
     /**

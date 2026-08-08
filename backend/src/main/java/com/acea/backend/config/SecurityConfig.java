@@ -76,8 +76,8 @@ public class SecurityConfig {
                 .requestMatchers(PUBLIC_ENDPOINTS).permitAll()
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 
-                // Admin-only routes (future modules)
-                .requestMatchers("/admin/**").hasAnyRole("ADMIN", "SUPER_ADMIN")
+                // Admin-only routes
+                .requestMatchers("/admin/**", "/api/v1/admin/**").hasAnyRole("ADMIN", "SUPER_ADMIN", "CONTENT_MANAGER")
                 .requestMatchers("/super-admin/**").hasRole("SUPER_ADMIN")
                 .requestMatchers("/enterprise/**").hasAnyRole("HR_MANAGER", "ADMIN", "SUPER_ADMIN")
                 .requestMatchers("/mentor/**").hasAnyRole("MENTOR", "ADMIN", "SUPER_ADMIN")

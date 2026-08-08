@@ -46,6 +46,21 @@ import ResumeAnalysisDetailPage       from '@/pages/ResumeAnalysisDetailPage';
 import SkillGapDashboardPage          from '@/pages/SkillGapDashboardPage';
 // Sprint 11 — AI Career Chatbot Module
 import ChatPage                       from '@/pages/ChatPage';
+// Sprint 12 — Platform Administration & Management System
+import { AdminDashboardPage }          from '@/pages/admin/AdminDashboardPage';
+import { UserManagementPage }          from '@/pages/admin/UserManagementPage';
+import { RoleManagementPage }          from '@/pages/admin/RoleManagementPage';
+import { CareerManagementPage }        from '@/pages/admin/CareerManagementPage';
+import { CollegeManagementPage }       from '@/pages/admin/CollegeManagementPage';
+import { ScholarshipManagementPage }   from '@/pages/admin/ScholarshipManagementPage';
+import { AssessmentManagementPage }    from '@/pages/admin/AssessmentManagementPage';
+import { LearningResourceManagementPage } from '@/pages/admin/LearningResourceManagementPage';
+import { RoadmapManagementPage }       from '@/pages/admin/RoadmapManagementPage';
+import { KnowledgeBaseManagementPage } from '@/pages/admin/KnowledgeBaseManagementPage';
+import { AiConfigPage }                from '@/pages/admin/AiConfigPage';
+import { AnalyticsDashboardPage }      from '@/pages/admin/AnalyticsDashboardPage';
+import { AuditLogsPage }               from '@/pages/admin/AuditLogsPage';
+import { NotificationManagementPage }  from '@/pages/admin/NotificationManagementPage';
 
 export default function AppRouter() {
   return (
@@ -228,6 +243,23 @@ export default function AppRouter() {
             <ChatPage />
           </ProtectedRoute>
         } />
+
+        {/* Protected Routes — Sprint 12: Admin Platform Management */}
+        <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
+        <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboardPage /></ProtectedRoute>} />
+        <Route path="/admin/users" element={<ProtectedRoute><UserManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/roles" element={<ProtectedRoute><RoleManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/careers" element={<ProtectedRoute><CareerManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/colleges" element={<ProtectedRoute><CollegeManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/scholarships" element={<ProtectedRoute><ScholarshipManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/assessments" element={<ProtectedRoute><AssessmentManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/learning-resources" element={<ProtectedRoute><LearningResourceManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/roadmaps" element={<ProtectedRoute><RoadmapManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/knowledge-base" element={<ProtectedRoute><KnowledgeBaseManagementPage /></ProtectedRoute>} />
+        <Route path="/admin/ai-config" element={<ProtectedRoute><AiConfigPage /></ProtectedRoute>} />
+        <Route path="/admin/analytics" element={<ProtectedRoute><AnalyticsDashboardPage /></ProtectedRoute>} />
+        <Route path="/admin/audit-logs" element={<ProtectedRoute><AuditLogsPage /></ProtectedRoute>} />
+        <Route path="/admin/notifications" element={<ProtectedRoute><NotificationManagementPage /></ProtectedRoute>} />
 
         {/* Fallbacks */}
         <Route path={ROUTES.NOT_FOUND} element={<NotFoundPage />} />
